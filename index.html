@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>😊</title>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1 class="fa-heading">You are Chutiya</h1>
+        </div>
+        <div class="fa-gif">
+            <img src="video/smile-4239_512.gif">
+        </div>
+        <div class="buttons">
+            <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
+            <button class="btn" id="noButton" onmouseover="moveButton()">No</button>
+        </div>
+    </div>
+
+    <script>
+        function nextPage() {
+            window.location.href = "video/yes.html";
+        }
+
+        function moveButton() {
+            var x = Math.random() * (window.innerWidth - document.getElementById("noButton").offsetWidth);
+            var y = Math.random() * (window.innerHeight - document.getElementById("noButton").offsetHeight);
+
+            document.getElementById("noButton").style.left = `${x}px`;
+            document.getElementById("noButton").style.top = `${y}px`;
+        }
+    </script>
+</body>
+</html>
