@@ -6,7 +6,7 @@
 
 body{
     min-height: 100vh;
-    background-color: cornflowerblue;
+    background-color: pink;
     overflow: hidden;
 }
 
@@ -51,7 +51,7 @@ body{
 
 #yesButton{
     position: absolute;
-    margin-inline-start: 150px;
+    margin-right: 150px;
 }
 
 button{
@@ -61,5 +61,11 @@ button{
     align-items: center;
     margin-top: 20px;
     margin-left: 20px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background: pink;
+    color: aliceblue;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
